@@ -1,7 +1,5 @@
 # Awesome-Conversation-Intelligence-Speech-Analytics
 
-# Awesome-Conversation-Intelligence-Speech-Analytics
-
 **Top Conversation Intelligence Speech Analytics (Opensource) 🌟 Star if you like it! 🌟**
 
 
