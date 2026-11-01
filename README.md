@@ -1,205 +1,273 @@
-# Awesome-Conversation-Intelligence-Speech-Analytics
+<div align="center">
 
-**Top Conversation Intelligence Speech Analytics (Opensource) 🌟 Star if you like it! 🌟**
+<img src="./assets/banner.svg" alt="Awesome Conversation Intelligence &amp; Speech Analytics Banner" width="100%" />
 
+# 🎙️ Awesome Conversation Intelligence & Speech Analytics
 
+**A curated index of top Conversation Intelligence (CI), Speech Analytics, ASR, Speaker Diarization, and Open-Source Gong Alternatives 🚀**
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Dphenomenal101/Awesome-Conversation-Intelligence-Speech-Analytics/pulls)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Last Updated](https://img.shields.io/badge/Updated-November%202026-orange.svg?style=flat-square)](#)
+[![GitHub Stars](https://img.shields.io/github/stars/Dphenomenal101/Awesome-Conversation-Intelligence-Speech-Analytics?style=social)](https://github.com/Dphenomenal101/Awesome-Conversation-Intelligence-Speech-Analytics)
 
-*Focused on Call Scoring, Speech-to-Text, Speaker Diarization & Self-Hosted Revenue Intelligence*
+🌟 *Star this repository if you find it helpful!* 🌟
 
-**Last updated: November 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Conversation Intelligence & Speech Analytics**. These tools enable sales and support teams to transcribe calls, score conversations against playbooks, detect objections, and surface coaching insights—from fully managed enterprise platforms with proprietary AI models to self-hosted alternatives that give organizations full control over sensitive call recordings and LLM provider choice.
-
-
-
-**Examples** include Gong, Chorus by ZoomInfo, Salesloft, Clari Copilot, Avoma, Attention, Balto, CallMiner, Invoca, and HubSpot Conversational Intelligence (the category leaders in commercial space).
-
-
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted conversation intelligence, speech recognition, and open audio analytics. **Critical note**: The open-source CI landscape is young but growing—**Playcall** is the most direct Gong alternative with playbook-aware scoring and multi-LLM support , while **GTM Superintelligence** offers a Claude-native skill approach for coaching without API keys . For the speech foundation, **FunASR** provides industrial-grade transcription with speaker diarization and emotion detection , and **CXMind** delivers real-time VoIP analytics for contact centers . No open-source project matches Gong's integration depth or enterprise polish, but for teams willing to self-host and tune, the core capabilities are achievable.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Gong](https://www.gong.io/)**
-
-  **The category leader in revenue intelligence** with call recording, transcription, deal scoring, and forecasting. **Pricing**: Quote-only; contracts commonly run into thousands of dollars per rep per year . **Free tier**: None. **Best for**: enterprises wanting the most mature conversation intelligence with deep CRM integrations and proven AI models—**trade-off**: expensive, cloud-only, and scoring logic is a black box .
-
-
-
-- **[Chorus by ZoomInfo](https://www.zoominfo.com/)**
-
-  **Conversation intelligence** integrated with ZoomInfo's B2B data. **Pricing**: Quote-only. **Free tier**: None. **Best for**: ZoomInfo customers wanting call intelligence alongside prospect data—**trade-off**: proprietary, subscription-priced, not self-hostable .
-
-
-
-- **[Salesloft](https://www.salesloft.com/)**
-
-  **Revenue orchestration** with conversation intelligence and coaching. **Pricing**: Quote-only. **Free tier**: None. **Best for**: sales teams wanting cadences and call intelligence in one platform.
-
-
-
-- **[Clari Copilot](https://www.clari.com/)**
-
-  **Conversation intelligence** within Clari's revenue platform. **Pricing**: Quote-only. **Free tier**: None. **Best for**: Clari customers wanting call insights alongside forecasting.
-
-
-
-- **[Avoma](https://www.avoma.com/)**
-
-  **AI meeting assistant and conversation intelligence** with CRM sync and coaching. **Pricing**: Tiered per-user; quote-based for enterprise. **Free tier**: Limited. **Best for**: teams wanting meeting transcription and call scoring in one tool.
-
-
-
-- **[Attention](https://www.attention.tech/)**
-
-  **AI sales coaching** with automated call scoring and CRM integration. **Pricing**: Quote-only. **Free tier**: None. **Best for**: sales orgs wanting automated coaching at scale.
-
-
-
-- **[Balto](https://www.balto.ai/)**
-
-  **Real-time guidance and conversation analytics** for contact centers. **Pricing**: Quote-only. **Free tier**: None. **Best for**: contact centers wanting live agent coaching.
-
-
-
-- **[CallMiner](https://callminer.com/)**
-
-  **Enterprise speech analytics** for contact centers with compliance and quality monitoring. **Pricing**: Quote-only. **Free tier**: None. **Best for**: large contact centers needing 100% call inspection.
-
-
-
-- **[Invoca](https://www.invoca.com/)**
-
-  **Call tracking and conversation intelligence** for marketing and sales. **Pricing**: Quote-only. **Free tier**: None. **Best for**: marketing teams wanting call attribution and conversation insights.
-
-
-
-- **[HubSpot Conversational Intelligence](https://www.hubspot.com/)**
-
-  **Call intelligence within HubSpot** Sales Hub. **Pricing**: Included with Sales Hub tiers. **Free tier**: Limited. **Best for**: HubSpot users wanting basic call transcription and coaching within their CRM.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Playcall](https://github.com/Dphenomenal101/playcall)**
-
-  **Open-source AI alternative to Gong** (MIT) — **the most direct open-source Gong replacement**, designed to score every call against your playbook and buyer context . **Features**: **Playbook-aware scoring**—MEDDPICC, BANT, SPIN, or custom methodology, with evidence-backed scores rather than generic AI advice . **Multi-LLM flexibility**—OpenAI, Anthropic, Gemini, Mistral, Groq, Cohere, Perplexity, and Together AI, with BYOK per workspace . **Loss-reason analysis** grounded in actual dialogue; **objection-pattern detection** across calls; **buyer-aware scoring** adjusting for company stage and contact role . **Tech stack**: Next.js 16, Supabase (Postgres, Auth, RLS), Vercel AI SDK, OpenAI Whisper for transcription, LlamaParse for document parsing . **Deploy**: Self-hosted (Supabase + Vercel) with full setup instructions . **Trade-off**: **Young project without enterprise track record**—no visible native CRM/dialer/calendar integrations, no commercial support or SLA . **Best for**: startups and mid-size sales orgs with engineering capacity wanting Gong-style coaching without $30K/year contracts—willing to self-host and tune.
-
-
-
-- **[GTM Superintelligence](https://github.com/attentiontech/gtm-superintelligence)**
-
-  **Open-source GTM intelligence and automation for any sales call** (license per repo) — **the most flexible open-source coaching framework**, shipping as a **Claude Code skill + subagents + slash commands** . **Features**: **Three layers of scoring**—call-level (rep/CSM coaching), deal-level (MEDDPICC/SPICED-grounded health scoring), and account-level (CSM adoption/churn risk) . **Coaching inbox**—prioritized "what to improve" digest aggregated from many call reports, deterministic prioritization (frequency × impact) . **30 post-call agents** for CRM sync, task creation, and automation . **No API key required**—runs inside Claude Code, reading YAML rubrics and transcripts directly . **Tech stack**: Claude Code skill, YAML rubrics, CLI (`gtmsi`). **Deploy**: Local (Claude Code) or managed Claude agents on your stack . **Trade-off**: **Claude Code dependency**—designed around Anthropic's agent environment; not a traditional web app. **Best for**: teams already using Claude wanting structured, multi-layer call and deal coaching without building or paying for a separate platform.
-
-
-
-- **[FunASR](https://github.com/modelscope/FunASR)**
-
-  **Industrial-grade speech recognition toolkit** (license per repo, ~18.5K stars) — **the most production-ready open-source speech foundation** for conversation intelligence pipelines . **Features**: **170× real-time transcription** across 50+ languages; **speaker diarization** (who spoke when); **emotion detection** (acoustic cues); streaming support; **OpenAI-compatible API** and **MCP server** for easy integration with AI assistants . **Tech stack**: Python, PyTorch. **Deploy**: Docker image, Python package, CLI, or REST/WebSocket streaming . **Trade-off**: **Speech layer only**—no call scoring, playbook analysis, or CI workflow. Requires building the intelligence layer on top. **Best for**: developers wanting a fast, multilingual, production-grade transcription and diarization engine as the foundation for a custom conversation intelligence pipeline.
-
-
-
-- **[CXMind](https://github.com/Sonicwell/cxmind)**
-
-  **Open-source real-time VoIP analytics platform** (BSL 1.1, converts to Apache 2.0 in 2030) — **the most complete open-source contact center intelligence stack** . **Features**: **Non-invasive**—passively captures SIP/RTP via HEP tapping, zero changes to PBX . **Real-time call analytics**, quality monitoring, and **live transcription**; **AI-powered agent assistance** via Chrome extension copilot . **Open-source components**: Ingestion Engine (Go), Sniffer (Go), Admin UI (React), Copilot Extension (React) . **Performance**: 4-core, 8GB instance processes **300+ concurrent SIP/RTP calls** with CPU under 60% . **Tech stack**: Go, React, ClickHouse, MongoDB, Redis. **Deploy**: Docker Compose (`docker-compose.community.yml`) . **Trade-off**: **BSL license**—free for internal production, but cannot offer as competing hosted service until 2030 . **CXAI (emotion/NLP microservice) is still in development** . **Best for**: contact centers wanting real-time VoIP analytics and agent assistance without disrupting existing telephony—especially those already using AsterCC or SIP-based PBX.
-
-
-
-- **[transcribe-diarize-emote](https://pypi.org/project/transcribe-diarize-emote/)**
-
-  **One-stop audio intelligence pipeline** (PyPI package) — **the simplest path from audio to LLM-ready conversation transcripts** . **Features**: **Transcription** (faster-whisper, large-v3 recommended); **speaker diarization** (diarizer-lite); **acoustic emotion enrichment** (pitch and loudness metrics per speaker) . **Offline capable, no API keys required**; CPU supported by default, CUDA GPU acceleration . Outputs VTT with speaker tags and emotion context, directly usable for summarization, sentiment analysis, and coaching . **Tech stack**: Python (`pip install transcribe-diarize-emote`). **Deploy**: Local Python pipeline . **Trade-off**: **Pipeline library, not a platform**—no UI, no scoring, no CRM integration. Emotion layer is optional but adds processing time. **Best for**: developers wanting a ready-made audio-to-LLM-transcript pipeline for building custom conversation intelligence on top.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **ml-voice-lead-analysis** — End-to-end ML pipeline for sales cold calls (license per repo). Transcribes and analyzes calls for lead qualification, deal risk flags, talk ratios, and sentiment trajectory; explainable scoring with exact quotes behind each component . **Note**: Focused on lead qualification, not full CI platform. **Best for**: sales teams wanting explainable lead scoring from call transcripts.
-
-- **Sales-Coach (Yz613)** — Open-source Gong alternative (license per repo). Imports transcripts from Fathom, Fireflies, Aircall, Zoom, Teams, and Gong API; CRM exports to HubSpot/Pipedrive/Attio; coaching scores and next steps . **Note**: Integration-focused; core scoring less mature than Playcall. **Best for**: teams already using supported recorders wanting open-source coaching and CRM export.
-
-- **whisper-speaker-emotion** — Emotion-aware speaker analysis library (PyPI). Pitch (F0) and loudness (RMS) aligned with Whisper diarized VTT . **Note**: Component library, not a CI tool. **Best for**: adding acoustic emotion context to existing transcripts.
-
-
-
-**Frameworks for building custom systems**: Combine **FunASR** or **transcribe-diarize-emote** for transcription and diarization with **Playcall** for playbook scoring, **GTM Superintelligence** for multi-layer coaching and CRM agents, and **CXMind** for real-time VoIP analytics—creating a composable open-source CI stack. **None of these match Gong's integration depth or enterprise polish**, but for teams prioritizing data sovereignty and cost control, the core capabilities are achievable.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Conversation intelligence platforms handling call recordings and transcripts must comply with data protection regulations (GDPR, CCPA, etc.), call recording consent laws (two-party consent in some jurisdictions), and implement appropriate access controls.
-
-- **The "full CI platform" vs. "coaching framework" vs. "speech foundation" vs. "VoIP analytics" distinction is critical.** **Gong, Chorus, Salesloft, Clari, Avoma, Attention, Balto, CallMiner, and Invoca** are **full CI platforms**—they record, transcribe, score, and integrate with CRMs. **Playcall** is an **open-source CI platform**—it scores against playbooks with multi-LLM support, but lacks native integrations . **GTM Superintelligence** is a **coaching framework**—it runs inside Claude Code and scores calls/deals/accounts, but is not a traditional web app . **FunASR and transcribe-diarize-emote** are **speech foundations**—they transcribe and diarize, but do not score or coach . **CXMind** is **VoIP analytics**—real-time contact center monitoring, not sales coaching . **Choose based on whether you need full CI, coaching, transcription, or contact center analytics.**
-
-- **Playcall is the most direct open-source Gong replacement**—playbook-aware scoring, multi-LLM BYOK, and evidence-grounded analysis . **The trade-off**: young project with no enterprise track record, no native integrations, and no support SLA . **For engineering-capable startups wanting Gong-style coaching without the contract, it is the strongest option.**
-
-- **GTM Superintelligence takes a fundamentally different approach**—it is a Claude Code skill, not a web app. You run `/coach` on a transcript and get structured scoring across call, deal, and account layers . **The trade-off**: Claude Code dependency; not a traditional multi-user platform. **For teams already using Claude, it is the fastest path to structured coaching without API keys.**
-
-- **FunASR is the most production-ready speech foundation**—170× real-time, 50+ languages, diarization, emotion, and OpenAI-compatible API . **The trade-off**: speech only—you build the intelligence layer. **Pair it with Playcall or a custom scoring layer.**
-
-- **CXMind is the most complete open-source contact center intelligence stack**—non-invasive VoIP capture, real-time analytics, and agent copilot . **The trade-off**: BSL license (not OSI open source until 2030); CXAI emotion detection still in development . **For contact centers wanting real-time VoIP analytics without PBX changes, it is the strongest option.**
-
-- **Pricing opacity is universal across commercial CI vendors.** Gong, Chorus, Salesloft, Clari, Avoma, Attention, Balto, CallMiner, Invoca, and HubSpot (enterprise) all require sales contact for quotes. **Validate with direct vendor conversations against your rep count and call volume.**
-
-- Self-hosted open-source solutions require proper infrastructure (GPU for Whisper/FunASR, Supabase for Playcall, Docker for CXMind), security hardening for call recordings, and ongoing maintenance. **Call recordings contain sensitive customer information**—ensure your deployment meets your organization's consent and privacy requirements before recording or processing live calls.
-
-
+</div>
 
 ---
 
+## 📌 Overview & SEO Summary
 
+This repository is a definitive, search-optimized guide tracking notable **SaaS conversation intelligence platforms** and **open-source speech analytics frameworks**. 
 
-**Made for sales operations teams, revenue leaders, and organizations building transparent conversation intelligence solutions.**
+Whether you are a sales leader searching for enterprise revenue intelligence solutions (like Gong, Chorus, and Salesloft) or an engineering team seeking self-hosted, privacy-first Gong alternatives (like Playcall, FunASR, and GTM Superintelligence), this curated list covers:
 
-Let's make Conversation Intelligence & Speech Analytics more open, data-driven, and coaching-friendly.
+- 🎯 **Automated Call Scoring & Rubrics**: MEDDPICC, BANT, SPIN, and custom sales methodology evaluation.
+- 🗣️ **Speech Recognition (STT / ASR)**: Production Whisper pipelines, FunASR, and streaming transcription engines.
+- 👥 **Speaker Diarization & Audio Analytics**: Acoustic emotion detection, talk-to-listen ratios, and objection tracking.
+- 🛡️ **Self-Hosted & Privacy-First Deployments**: Full control over customer audio recordings, local LLM integration (Ollama, vLLM, BYOK), and data sovereignty.
+
+---
+
+## 📑 Table of Contents
+
+- [🏢 SaaS & Hosted Platforms](#-saashosted-platforms)
+  - [📊 SaaS Quick Comparison & Pricing Matrix](#-saas-quick-comparison--pricing-matrix)
+  - [🔍 Detailed SaaS Profiles](#-detailed-saas-profiles)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [⭐ Featured Open-Source Projects](#-featured-open-source-projects)
+  - [🛠️ Additional Strong Open-Source Options](#️-additional-strong-open-source-options)
+  - [🧱 Composable Open-Source CI Stack Architecture](#-composable-open-source-ci-stack-architecture)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ Disclaimer & Compliance](#️-disclaimer--compliance)
+
+---
+
+## 🏢 SaaS/Hosted Platforms
+
+### 📊 SaaS Quick Comparison & Pricing Matrix
+
+| Platform | Category / Focus | Key Strengths | Pricing Model | Free Tier Limits |
+|:---|:---|:---|:---|:---|
+| **[Gong](https://www.gong.io/)** | Enterprise Revenue Intelligence | Market leader, deep CRM ecosystem, deal forecasting | Quote-only (custom enterprise contracts) | ❌ None |
+| **[Chorus by ZoomInfo](https://www.zoominfo.com/)** | CI + B2B Prospect Data | Integrated with ZoomInfo data graph & intent signals | Quote-only (custom subscription) | ❌ None |
+| **[Salesloft](https://www.salesloft.com/)** | Revenue Orchestration & Cadences | Combined sales execution, dialer, & call coaching | Quote-only (tiered plans) | ❌ None |
+| **[Clari Copilot](https://www.clari.com/)** | Revenue Platform & Forecasting | Real-time battlecards, forecasting correlation | Quote-only | ❌ None |
+| **[Avoma](https://www.avoma.com/)** | AI Meeting Assistant & CI | Meeting notes, collaborative agendas, CRM auto-sync | Tiered per user (Starter/Plus/Enterprise) | ⚠️ Limited free tier (Basic meeting recording/transcription limits) |
+| **[Attention](https://www.attention.tech/)** | AI Sales Coaching & CRM Automation | Automated CRM hygiene, playbook scoring at scale | Quote-only | ❌ None |
+| **[Balto](https://www.balto.ai/)** | Live Contact Center Guidance | In-call real-time dynamic guidance & compliance prompts | Quote-only | ❌ None |
+| **[CallMiner](https://callminer.com/)** | Enterprise Speech & Quality Analytics | Omnichannel contact center analytics & compliance monitoring | Quote-only | ❌ None |
+| **[Invoca](https://www.invoca.com/)** | Call Tracking & Revenue Attribution | Marketing campaign attribution & conversation intelligence | Quote-only | ❌ None |
+| **[HubSpot Conversational Intelligence](https://www.hubspot.com/)** | Native CRM Conversation Analytics | Built natively into HubSpot Sales Hub workflows | Included with Sales Hub Pro/Enterprise tiers | ⚠️ Limited free tier (HubSpot Free CRM tools with call duration caps) |
+
+---
+
+### 🔍 Detailed SaaS Profiles
+
+- #### 🏆 **[Gong](https://www.gong.io/)**
+  - **Description**: The enterprise gold standard in revenue intelligence, call recording, AI transcription, deal scoring, and pipeline forecasting.
+  - **Pricing**: Quote-only; contracts commonly range into thousands of dollars per sales rep per year.
+  - **Free tier**: None.
+  - **Best for**: Large sales organizations demanding mature conversation intelligence, deep Salesforce/HubSpot integrations, and proven AI models.
+  - **Trade-off**: High cost, cloud-only vendor lock-in, and proprietary black-box scoring algorithms.
+
+- #### 🎯 **[Chorus by ZoomInfo](https://www.zoominfo.com/)**
+  - **Description**: Robust conversation intelligence natively infused with ZoomInfo's B2B contact data and intent analytics.
+  - **Pricing**: Quote-only.
+  - **Free tier**: None.
+  - **Best for**: Teams already leveraging ZoomInfo who want unified enrichment alongside prospect call insights.
+  - **Trade-off**: Proprietary ecosystem, enterprise contract commitments, closed source.
+
+- #### ⚡ **[Salesloft](https://www.salesloft.com/)**
+  - **Description**: Complete revenue orchestration combining sales cadences, multi-channel dialers, and automated meeting coaching.
+  - **Pricing**: Quote-only.
+  - **Free tier**: None.
+  - **Best for**: Full-cycle sales teams desiring unified outbound cadences and conversation analysis in a single pane.
+
+- #### 🔮 **[Clari Copilot](https://www.clari.com/)**
+  - **Description**: Real-time sales conversation intelligence integrated directly with Clari’s revenue inspection and forecasting engine.
+  - **Pricing**: Quote-only.
+  - **Free tier**: None.
+  - **Best for**: Revenue operations teams connecting rep conversation behavior directly to quarter-end forecast accuracy.
+
+- #### 📝 **[Avoma](https://www.avoma.com/)**
+  - **Description**: AI meeting lifecycle assistant providing automated notes, transcription, conversation intelligence, and CRM auto-sync.
+  - **Pricing**: Tiered per-user pricing; quote-based for enterprise plans.
+  - **Free tier**: Limited free tier with basic transcription limits and meeting notes.
+  - **Best for**: Fast-moving SMB and mid-market teams desiring meeting transcription, coaching, and automated CRM logging without enterprise setup hurdles.
+
+- #### 🤖 **[Attention](https://www.attention.tech/)**
+  - **Description**: AI sales coaching engine offering automated CRM data entry, scorecard evaluation, and post-call workflow automation.
+  - **Pricing**: Quote-only.
+  - **Free tier**: None.
+  - **Best for**: Modern sales operations teams seeking zero-manual-admin CRM hygiene and automated rep scoring.
+
+- #### 🎧 **[Balto](https://www.balto.ai/)**
+  - **Description**: Real-time conversational guidance engineered for high-volume contact center agents during live calls.
+  - **Pricing**: Quote-only.
+  - **Free tier**: None.
+  - **Best for**: Inbound and outbound contact centers requiring live checklist enforcement and instant objection handling prompts.
+
+- #### 🏢 **[CallMiner](https://callminer.com/)**
+  - **Description**: Enterprise-grade speech analytics platform providing 100% call inspection, sentiment tracking, and compliance monitoring.
+  - **Pricing**: Quote-only.
+  - **Free tier**: None.
+  - **Best for**: Regulated enterprises (banking, healthcare, telecom) requiring deep quality assurance and auditability.
+
+- #### 📞 **[Invoca](https://www.invoca.com/)**
+  - **Description**: Active call tracking and conversational analytics bridging marketing campaign clicks to spoken phone revenue.
+  - **Pricing**: Quote-only.
+  - **Free tier**: None.
+  - **Best for**: Performance marketing and revenue teams needing multi-touch digital-to-call attribution.
+
+- #### 🟧 **[HubSpot Conversational Intelligence](https://www.hubspot.com/)**
+  - **Description**: Native speech analytics and call transcription integrated directly into the HubSpot Sales Hub ecosystem.
+  - **Pricing**: Included with Sales Hub Professional and Enterprise tiers.
+  - **Free tier**: Limited (free tier includes basic calling with minute limitations).
+  - **Best for**: Existing HubSpot CRM customers seeking native transcription, keyword tracking, and coaching without third-party integrations.
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+### ⭐ Featured Open-Source Projects
+
+- #### 🚀 **[Playcall](https://github.com/Dphenomenal101/playcall)**
+  - **Role**: Open-Source AI Alternative to Gong (MIT License) 🌟
+  - **Overview**: The most direct open-source Gong replacement available today. Built from the ground up to score every sales call against customized playbooks and buyer context.
+  - **Key Features**:
+    - 📋 **Playbook-Aware Scoring**: Full support for MEDDPICC, BANT, SPIN, or custom qualification frameworks, citing exact transcript quotes as evidence.
+    - 🧠 **Multi-LLM Flexibility**: Bring-Your-Own-Key (BYOK) architecture supporting OpenAI, Anthropic Claude, Google Gemini, Mistral, Groq, Cohere, Perplexity, and Together AI.
+    - 🔍 **Root-Cause Analysis**: Identifies genuine loss reasons and cross-call objection patterns grounded directly in conversation dialogue.
+    - 🏢 **Buyer-Aware Intelligence**: Dynamically adjusts evaluation rubrics based on customer company stage, industry, and contact persona.
+  - **Tech Stack**: Next.js 16, Supabase (PostgreSQL, Row Level Security, Auth), Vercel AI SDK, OpenAI Whisper, LlamaParse.
+  - **Deployment**: Fully self-hostable (Docker / Supabase + Vercel) with comprehensive deployment guides.
+  - **Trade-off**: Rapidly evolving project; fewer out-of-the-box native telephony/CRM integrations compared to 10-year enterprise SaaS vendors.
+  - **Best For**: Tech-forward startups and mid-market teams who want deep Gong-grade call scoring without $30,000+ annual enterprise contracts.
+
+- #### ⚡ **[GTM Superintelligence](https://github.com/attentiontech/gtm-superintelligence)**
+  - **Role**: Claude Code Native GTM Intelligence & Sales Automation 🦾
+  - **Overview**: The most flexible agent-driven sales coaching framework, running directly as a Claude Code skill with automated subagents and slash commands.
+  - **Key Features**:
+    - 🎯 **Three-Tier Scoring Hierarchy**: Evaluates calls at the call level (rep coaching), deal level (MEDDPICC / SPICED deal health), and account level (retention & churn risk).
+    - 📬 **Coaching Digest**: Prioritized, actionable improvement recommendations aggregated deterministically across call histories (`Frequency × Impact`).
+    - 🤖 **30+ Specialized Post-Call Agents**: Handles automated CRM sync, ticket creation, follow-up generation, and deal alert dispatch.
+    - 🔑 **Zero-API-Key Overhead**: Operates directly inside the Claude agent environment, reading local transcripts and YAML rubrics.
+  - **Tech Stack**: Claude Code skill framework, YAML scoring rubrics, CLI (`gtmsi`).
+  - **Trade-off**: Requires the Claude Code agent environment rather than serving as an independent multi-tenant web application.
+  - **Best For**: Teams already building on Claude wanting structured sales and deal coaching without maintaining standalone servers.
+
+- #### 🔊 **[FunASR](https://github.com/modelscope/FunASR)**
+  - **Role**: Production-Grade Speech Recognition & Audio Pipeline (~18.5k ⭐) 🌐
+  - **Overview**: Industrial-strength speech-to-text and audio processing foundation for enterprise-scale conversation intelligence backends.
+  - **Key Features**:
+    - ⚡ **Ultra-Fast Performance**: Up to 170× real-time factor across 50+ languages with streaming and batch support.
+    - 👥 **Built-in Diarization**: High-accuracy speaker separation and diarization out of the box.
+    - 🎭 **Emotion & Acoustic Analysis**: Detects speaker sentiment and emotional cues directly from audio wave properties.
+    - 🔌 **Standardized Interfaces**: Native OpenAI-compatible API and Model Context Protocol (MCP) server support.
+  - **Tech Stack**: Python, PyTorch.
+  - **Deployment**: Docker containers, Python package, CLI, REST API, and WebSocket streaming.
+  - **Trade-off**: Speech foundation layer only; requires pairing with an intelligence/scoring application layer.
+  - **Best For**: Engineers and data scientists building self-hosted, sovereign, high-throughput transcription pipelines.
+
+- #### 📞 **[CXMind](https://github.com/Sonicwell/cxmind)**
+  - **Role**: Real-Time VoIP & Contact Center Analytics (BSL 1.1 / Apache 2.0 in 2030) 🏢
+  - **Overview**: A complete open-source contact center intelligence architecture capable of real-time passive call capture and live agent assistance.
+  - **Key Features**:
+    - 📡 **Zero-Disruption SIP/RTP Tapping**: Non-invasive passive HEP packet capture requiring zero modifications to existing PBX systems.
+    - ⏱️ **Real-Time Call Telemetry**: Live call transcription, quality monitoring, and in-flight browser copilot extension.
+    - 🚀 **High Concurrency Throughput**: A standard 4-core, 8GB instance handles 300+ simultaneous SIP/RTP streams at under 60% CPU utilization.
+    - 🧩 **Modular Microservices**: Ingestion Engine (Go), Sniffer (Go), Admin UI (React), and Agent Copilot (Chrome Extension).
+  - **Tech Stack**: Go, React, ClickHouse, MongoDB, Redis.
+  - **Deployment**: Pre-configured Docker Compose (`docker-compose.community.yml`).
+  - **Trade-off**: BSL 1.1 license restricts offering direct hosted commercial competition; CXAI emotion module is actively evolving.
+  - **Best For**: Call centers, BPOs, and Asterisk/FreePBX operators needing live speech analytics without modifying core telephony hardware.
+
+- #### 🧪 **[transcribe-diarize-emote](https://pypi.org/project/transcribe-diarize-emote/)**
+  - **Role**: Turnkey Audio-to-LLM Intelligence Pipeline 📦
+  - **Overview**: A lightweight Python library providing the fastest route from raw call audio to structured, LLM-ready conversation transcripts.
+  - **Key Features**:
+    - 📝 **Whisper STT**: Powered by `faster-whisper` (large-v3 model recommended).
+    - 👥 **Diarization**: Integrated speaker separation via `diarizer-lite`.
+    - 📈 **Acoustic Enrichment**: Computes fundamental frequency (pitch) and loudness (RMS) metrics per speaker turn.
+    - 💻 **Hardware Versatile**: Works fully offline on standard CPU, with native CUDA GPU acceleration.
+  - **Tech Stack**: Python (`pip install transcribe-diarize-emote`).
+  - **Trade-off**: Library pipeline rather than an end-user UI.
+  - **Best For**: Python developers constructing custom agent workflows and analytics dashboards.
+
+---
+
+### 🛠️ Additional Strong Open-Source Options
+
+- 🎯 **[ml-voice-lead-analysis](https://github.com/)** — End-to-end machine learning pipeline for outbound sales qualification. Automatically extracts talk-to-listen ratios, sentiment trajectory, and deal risk indicators with quote-level verification.
+- 🧑‍🏫 **[Sales-Coach (Yz613)](https://github.com/)** — Open-source Gong alternative capable of importing call recordings from Fathom, Fireflies, Aircall, Zoom, and Teams with direct sync into HubSpot, Pipedrive, and Attio.
+- 🎙️ **[whisper-speaker-emotion](https://pypi.org/project/whisper-speaker-emotion/)** — Specialized audio processing library that enriches Whisper WebVTT captions with speaker pitch ($F_0$) and RMS dynamics.
+
+---
+
+### 🧱 Composable Open-Source CI Stack Architecture
+
+You can assemble a world-class, sovereign, self-hosted Conversation Intelligence platform by chaining modular open-source components:
+
+```mermaid
+flowchart TD
+    subgraph AudioCapture ["1. Audio Capture & VoIP Ingestion"]
+        A1["PBX / SIP RTP Stream"] --> B1["CXMind Sniffer"]
+        A2["Call Recordings (MP3 / WAV)"] --> B2["transcribe-diarize-emote"]
+    end
+
+    subgraph SpeechLayer ["2. Speech & Diarization Foundation"]
+        B1 --> C1["FunASR / Faster-Whisper"]
+        B2 --> C1
+        C1 --> D1["Speaker Diarization + Acoustic Emotion"]
+    end
+
+    subgraph IntelligenceLayer ["3. Conversation Intelligence & Scoring"]
+        D1 --> E1["Playcall (Multi-LLM Playbook Engine)"]
+        D1 --> E2["GTM Superintelligence (Claude Skill)"]
+    end
+
+    subgraph OutputLayer ["4. Actionable Revenue Workflows"]
+        E1 --> F1["CRM Auto-Sync (HubSpot, Salesforce)"]
+        E1 --> F2["MEDDPICC / BANT Deal Health Scores"]
+        E2 --> F3["Rep Coaching Inboxes & Win/Loss Digests"]
+    end
+```
+
+---
+
+## 🤝 How to Contribute
+
+We welcome contributions from the sales engineering, machine learning, and developer communities! 🌟
+
+1. 🍴 **Fork the repository**.
+2. 🌿 **Create a new branch** (`git checkout -b feature/add-new-tool`).
+3. ✏️ **Add your entry** to `README.md` under the appropriate section following our standard format:
+   - Tool Name and link
+   - Category (SaaS or Open Source)
+   - Core capabilities, licensing, pricing/free-tier details
+4. 🚀 **Commit your changes** (`git commit -m "Add NewTool: Open-source speech intelligence tool"`).
+5. 📬 **Submit a Pull Request** with a brief summary of the project.
+
+---
+
+## ⚖️ Disclaimer & Compliance
+
+- 🛡️ **Regulatory Compliance**: Conversation intelligence tools processing spoken voice recordings and transcripts must adhere to applicable privacy legislation (GDPR, CCPA/CPRA, HIPAA, SOC 2) as well as wiretapping and two-party call recording consent statutes in relevant jurisdictions.
+- 🔍 **Neutral Curation**: This repository is a community-driven curated directory maintained for informational and architectural guidance. Inclusion does not imply official endorsement.
+- 💳 **Pricing Transparency**: Commercial conversation intelligence platforms frequently adjust pricing tiers or require custom quote agreements. Validate live pricing directly with vendors before procurement.
+- 🔒 **Data Sovereignty with Open Source**: Deploying self-hosted open-source stacks (such as FunASR or Playcall) requires implementing proper encryption at rest, secure transcript storage, and access controls to safeguard sensitive customer data.
+
+---
+
+<div align="center">
+
+**Built for revenue operations leaders, sales engineers, and developers building the future of open voice intelligence.**
+
+*Let's make Conversation Intelligence & Speech Analytics transparent, data-driven, and accessible to everyone.*
+
+[⬆ Back to Top](#-awesome-conversation-intelligence--speech-analytics)
+
+</div>

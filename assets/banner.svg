@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+      <circle cx="40" cy="40" r="1" fill="#64748b" fill-opacity="0.4" />
+    </pattern>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      letter-spacing: -0.5px;
+      fill: url(#primaryGrad);
+    }
+    .subtitle-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+    .tagline-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      fill: #38bdf8;
+      letter-spacing: 1.5px;
+    }
+
+    /* Waveform Animation */
+    @keyframes wavePulse {
+      0%, 100% { height: 12px; y: 354px; opacity: 0.4; }
+      50% { height: 48px; y: 336px; opacity: 0.95; }
+    }
+    .wave-bar {
+      animation: wavePulse 1.8s ease-in-out infinite;
+      rx: 2px;
+    }
+
+    /* Floating Orbs */
+    @keyframes floatSlow {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(25px, -18px); }
+    }
+    @keyframes floatReverse {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-30px, 20px); }
+    }
+    .orb-1 { animation: floatSlow 8s ease-in-out infinite; }
+    .orb-2 { animation: floatReverse 10s ease-in-out infinite; }
+
+    /* Soundwave flow */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.7; }
+    }
+    .pulse-line { animation: pulseGlow 3s ease-in-out infinite; }
+
+    /* Pill hover-like shine */
+    @keyframes shimmer {
+      0% { stop-color: #38bdf8; }
+      50% { stop-color: #ec4899; }
+      100% { stop-color: #38bdf8; }
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" fill="url(#cyberGrid)" />
+
+  <!-- Background Dynamic Glowing Ambient Lights -->
+  <g class="orb-1">
+    <circle cx="200" cy="100" r="180" fill="url(#glowGrad)" filter="url(#neonGlow)" />
+  </g>
+  <g class="orb-2">
+    <circle cx="1050" cy="300" r="220" fill="url(#accentCyan)" filter="url(#neonGlow)" />
+    <circle cx="850" cy="80" r="120" fill="#a855f7" opacity="0.15" filter="url(#neonGlow)" />
+  </g>
+
+  <!-- Dynamic Waveform Lines (Background / Ambient) -->
+  <g opacity="0.25">
+    <path d="M 0 360 C 200 320, 350 400, 550 350 C 750 300, 950 390, 1200 340" fill="none" stroke="#38bdf8" stroke-width="2" class="pulse-line" />
+    <path d="M 0 375 C 250 410, 450 330, 700 370 C 950 410, 1050 330, 1200 365" fill="none" stroke="#818cf8" stroke-width="2" class="pulse-line" style="animation-delay: -1.5s;" />
+  </g>
+
+  <!-- Top Category Kicker Badge -->
+  <g transform="translate(60, 48)">
+    <rect width="320" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+    <circle cx="18" cy="15" r="5" fill="#10b981">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="32" y="20" class="tagline-text">SPEECH &amp; REVENUE INTELLIGENCE</text>
+  </g>
+
+  <!-- Foreground Main Title & Subtitle (Always in Foreground and Crisp) -->
+  <g transform="translate(60, 135)">
+    <!-- Shadow for ultra clarity -->
+    <text x="0" y="0" class="title-text" filter="url(#cardShadow)">Awesome Conversation Intelligence</text>
+    <text x="0" y="44" class="title-text" filter="url(#cardShadow)">&amp; Speech Analytics</text>
+    <text x="0" y="88" class="subtitle-text">Curated guide to SaaS leaders, open-source Gong alternatives, ASR models &amp; call scoring pipelines</text>
+  </g>
+
+  <!-- Feature Pills / Highlights -->
+  <g transform="translate(60, 275)">
+    <!-- Pill 1: Call Scoring -->
+    <g transform="translate(0, 0)">
+      <rect width="170" height="38" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" filter="url(#cardShadow)" />
+      <text x="16" y="24" class="badge-text">📊 Call Scoring</text>
+    </g>
+    <!-- Pill 2: Speech-to-Text -->
+    <g transform="translate(185, 0)">
+      <rect width="185" height="38" rx="10" fill="#1e293b" stroke="#818cf8" stroke-width="1.2" filter="url(#cardShadow)" />
+      <text x="16" y="24" class="badge-text">🎙️ Speech-to-Text</text>
+    </g>
+    <!-- Pill 3: Diarization -->
+    <g transform="translate(385, 0)">
+      <rect width="205" height="38" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="1.2" filter="url(#cardShadow)" />
+      <text x="16" y="24" class="badge-text">👥 Speaker Diarization</text>
+    </g>
+    <!-- Pill 4: Open Source -->
+    <g transform="translate(605, 0)">
+      <rect width="180" height="38" rx="10" fill="#1e293b" stroke="#34d399" stroke-width="1.2" filter="url(#cardShadow)" />
+      <text x="16" y="24" class="badge-text">🔓 Open-Source CI</text>
+    </g>
+    <!-- Pill 5: Revenue Intelligence -->
+    <g transform="translate(800, 0)">
+      <rect width="210" height="38" rx="10" fill="#1e293b" stroke="#f472b6" stroke-width="1.2" filter="url(#cardShadow)" />
+      <text x="16" y="24" class="badge-text">💡 Revenue Intelligence</text>
+    </g>
+  </g>
+
+  <!-- Dynamic Bottom Waveform Equalizer Display (Bottom right & center accent) -->
+  <g transform="translate(750, 0)">
+    <!-- Equalizer bars with animated heights -->
+    <rect class="wave-bar" x="0" y="350" width="6" height="20" fill="#38bdf8" style="animation-delay: 0.1s;" />
+    <rect class="wave-bar" x="12" y="340" width="6" height="30" fill="#38bdf8" style="animation-delay: 0.3s;" />
+    <rect class="wave-bar" x="24" y="330" width="6" height="40" fill="#818cf8" style="animation-delay: 0.5s;" />
+    <rect class="wave-bar" x="36" y="325" width="6" height="45" fill="#818cf8" style="animation-delay: 0.2s;" />
+    <rect class="wave-bar" x="48" y="345" width="6" height="25" fill="#a855f7" style="animation-delay: 0.7s;" />
+    <rect class="wave-bar" x="60" y="335" width="6" height="35" fill="#a855f7" style="animation-delay: 0.4s;" />
+    <rect class="wave-bar" x="72" y="320" width="6" height="50" fill="#c084fc" style="animation-delay: 0.6s;" />
+    <rect class="wave-bar" x="84" y="340" width="6" height="30" fill="#38bdf8" style="animation-delay: 0.8s;" />
+    <rect class="wave-bar" x="96" y="330" width="6" height="40" fill="#38bdf8" style="animation-delay: 0.15s;" />
+    <rect class="wave-bar" x="108" y="345" width="6" height="25" fill="#818cf8" style="animation-delay: 0.9s;" />
+    <rect class="wave-bar" x="120" y="325" width="6" height="45" fill="#a855f7" style="animation-delay: 0.35s;" />
+    <rect class="wave-bar" x="132" y="335" width="6" height="35" fill="#c084fc" style="animation-delay: 0.55s;" />
+    <rect class="wave-bar" x="144" y="350" width="6" height="20" fill="#38bdf8" style="animation-delay: 0.75s;" />
+    <rect class="wave-bar" x="156" y="342" width="6" height="28" fill="#818cf8" style="animation-delay: 0.25s;" />
+    <rect class="wave-bar" x="168" y="328" width="6" height="42" fill="#a855f7" style="animation-delay: 0.65s;" />
+    <rect class="wave-bar" x="180" y="346" width="6" height="24" fill="#38bdf8" style="animation-delay: 0.45s;" />
+    <rect class="wave-bar" x="192" y="336" width="6" height="34" fill="#818cf8" style="animation-delay: 0.85s;" />
+    <rect class="wave-bar" x="204" y="348" width="6" height="22" fill="#c084fc" style="animation-delay: 0.1s;" />
+    <rect class="wave-bar" x="216" y="330" width="6" height="40" fill="#38bdf8" style="animation-delay: 0.5s;" />
+    <rect class="wave-bar" x="228" y="344" width="6" height="26" fill="#818cf8" style="animation-delay: 0.3s;" />
+    <rect class="wave-bar" x="240" y="322" width="6" height="48" fill="#a855f7" style="animation-delay: 0.7s;" />
+    <rect class="wave-bar" x="252" y="340" width="6" height="30" fill="#38bdf8" style="animation-delay: 0.2s;" />
+    <rect class="wave-bar" x="264" y="350" width="6" height="20" fill="#818cf8" style="animation-delay: 0.6s;" />
+    <rect class="wave-bar" x="276" y="334" width="6" height="36" fill="#c084fc" style="animation-delay: 0.4s;" />
+    <rect class="wave-bar" x="288" y="346" width="6" height="24" fill="#38bdf8" style="animation-delay: 0.8s;" />
+    <rect class="wave-bar" x="300" y="338" width="6" height="32" fill="#818cf8" style="animation-delay: 0.15s;" />
+    <rect class="wave-bar" x="312" y="348" width="6" height="22" fill="#a855f7" style="animation-delay: 0.75s;" />
+    <rect class="wave-bar" x="324" y="326" width="6" height="44" fill="#38bdf8" style="animation-delay: 0.35s;" />
+    <rect class="wave-bar" x="336" y="344" width="6" height="26" fill="#c084fc" style="animation-delay: 0.55s;" />
+    <rect class="wave-bar" x="348" y="352" width="6" height="18" fill="#818cf8" style="animation-delay: 0.9s;" />
+    <rect class="wave-bar" x="360" y="340" width="6" height="30" fill="#38bdf8" style="animation-delay: 0.25s;" />
+  </g>
+
+  <!-- Frame Border -->
+  <rect x="1" y="1" width="1198" height="418" rx="12" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.6" />
+</svg>
