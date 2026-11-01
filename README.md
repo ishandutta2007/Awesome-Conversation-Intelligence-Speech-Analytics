@@ -10,7 +10,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Dphenomenal101/Awesome-Conversation-Intelligence-Speech-Analytics/pulls)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Last Updated](https://img.shields.io/badge/Updated-November%202026-orange.svg?style=flat-square)](#)
-[![GitHub Stars](https://img.shields.io/github/stars/Dphenomenal101/Awesome-Conversation-Intelligence-Speech-Analytics?style=social)](https://github.com/Dphenomenal101/Awesome-Conversation-Intelligence-Speech-Analytics)
+[![GitHub_Stars](https://img.shields.io/github/stars/Dphenomenal101/Awesome-Conversation-Intelligence-Speech-Analytics?style=social)](https://github.com/Dphenomenal101/Awesome-Conversation-Intelligence-Speech-Analytics)
 
 🌟 *Star this repository if you find it helpful!* 🌟
 
